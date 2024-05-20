@@ -17,13 +17,21 @@
 
 /* search-area */
 .search-area {
-    padding: 20px, 24px;
+    width: 100%;
+    padding: 20px 24px;
     border-radius: 16px;
+    border: none;
     background: var(--cF4F4F4);
     color: var(--c2D2D2D);
     font-family: var(--Inter);
     font-size: 20px;
     font-weight: 700;
+    display: block;
+    position: relative;
+}
+
+.search-area:focus {
+    border: none;
 }
 
 .search-area::placeholder {
@@ -45,6 +53,7 @@
     padding-right: 24px;
     margin: auto;
 }
+
 /* //CONTAINER */
 
 /* GLOBAL STYLES */
@@ -63,5 +72,94 @@ a {
 ul {
     list-style: none;
 }
+
 /* //GLOBAL STYLES */
 
+
+/* Site header */
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 51px;
+    position: relative;
+}
+
+.site-header {
+    width: 100%;
+    padding-top: 58px;
+    padding-bottom: 45px;
+}
+
+.site-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-menu-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 26px;
+}
+
+.select-box {
+    border: none;
+    color: var(--c2D2D2D);
+    font-family: var(--Inter);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    stroke-width: 1.5px;
+    stroke: var(--cA445ED);
+}
+
+.dark-mode {
+    padding: 6px 0px 6px 26px;
+    border-left: 1px solid var(--cE9E9E9);
+    display: flex;
+    column-gap: 20px;
+}
+
+.dark-mode:hover {
+    cursor: pointer;
+}
+
+.dark-btn {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #757575;
+    padding: 3px;
+}
+
+.dark-btn:active{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: var(--cA445ED);  
+    /* display: none; */
+}
+
+.dark-btn:focus {
+    border: none;
+}
+
+.dark-btn-item {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.icon-search {
+    position: absolute;
+    top: 115px;
+    right: 48px;
+}
+
+/* //Site header */
