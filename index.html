@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Dictionary</title>
 
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/all.min.css">
 </head>
+
 <body>
 
-    <header class="site-header"> 
+    <header class="site-header">
         <div class="container header-flex">
             <nav class="site-menu">
                 <a href="#!" class="logo-link">
@@ -22,30 +25,133 @@
                         <option value="Serif">Serif</option>
                         <option value="Mono">Mono</option>
                     </select>
-    
+
                     <div class="dark-mode">
                         <div class="dark-btn">
                             <div class="dark-btn-item"></div>
                         </div>
-        
+
                         <div class="dark-icons">
                             <img src="./img/Path.svg" alt="" class="dark-icon">
                         </div>
                     </div>
                 </div>
             </nav>
-            
+
             <input type="text" placeholder="Search for any word…" class="search-area">
             <img src="./img/iconoir_search.svg" alt="Search icon" class="icon-search">
 
         </div>
 
-</header>
-    
+    </header>
+
+    <main class="site-main">
+        <div class="container main-flex">
+            <!-- Main Word -->
+            <div class="main-word__box">
+                <div class="main-words">
+                    <h1 class="main-word__text">keyboard</h1>
+                    <p class="main-word__read">/ˈkiːbɔːd/</p>
+                </div>
+
+                <div class="main-media__box">
+                    <i class="fas fa-play main-media__icon"></i>
+                </div>
+            </div>
+            <!-- //Main Word -->
+
+
+            <!--   Noun -->
+            <div class="noun-box">
+                <h4 class="houn-box__text">noun</h4>
+                <div class="noun-box-line"></div>
+            </div>
+            <!--// Noun -->
+
+
+            <!-- Noun Meaning -->
+            <div class="meaning-box">
+                <h6 class="meaning-text">Meaning</h6>
+
+                <ul class="meaning-list">
+                    <li class="menaing-list__item">
+                        <div class="meaning-list__mark"></div>
+                        <p class="menaing-list_text">
+                            (etc.) A set of keys used to operate a typewriter, computer etc.
+                        </p>
+                    </li>
+
+                    <li class="menaing-list__item">
+                        <div class="meaning-list__mark"></div>
+                        <p class="menaing-list_text">
+                            A component of many instruments including the piano, organ, and harpsichord consisting of usually black and white keys that cause different tones to be produced when struck.
+                        </p>
+                    </li>
+
+                    <li class="menaing-list__item">
+                        <div class="meaning-list__mark"></div>
+                        <p class="menaing-list_text">
+                            A device with keys of a musical keyboard, used to control electronic sound-producing devices which may be built into or separate from the keyboard device.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="synonym">
+                <h6 class="synonym-text">Synonyms</h6>
+                <p class="synonym-word">electronic keyboard</p>
+            </div>
+            <!-- //Noun Meaning -->
+
+            <!-- Verb -->
+            <div class="noun-box verb-box">
+                <h4 class="houn-box__text verb-text">verb</h4>
+                <div class="noun-box-line verb-line"></div>
+            </div>
+            <!-- //Verb -->
+
+            <!-- Veerb Meaning -->
+            <div class="meaning-box">
+                <h6 class="meaning-text">Meaning</h6>
+
+                <ul class="meaning-list">
+                    <li class="menaing-list__item">
+                        <div class="meaning-list__mark"></div>
+                        <p class="menaing-list_text">
+                            To type on a computer keyboard.
+                        </p>
+                    </li>
+                    <li class="menaing-list__item verb-menaing__desc">
+                        “Keyboarding is the part of this job I hate the most.”
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- //Verb Meaning -->
+
+
+            <!-- Source -->
+            <div class="source">
+                <h6 class="source-text">Source</h6>
+                <a href="#!" class="source-link">
+                    https://en.wiktionary.org/wiki/keyboard 
+                    <span class="source-link__icon"><img src="./img/tabler_external-link.svg" alt=""></span>
+                </a>
+            </div>
+            <!-- //Source -->
+
+
+
+        </div>
+    </main>
+
 
 
 
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>
